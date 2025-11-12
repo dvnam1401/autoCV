@@ -12,7 +12,8 @@
 %	
 %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+%   IN NO EVENT SHALL THE
 %	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
@@ -29,32 +30,17 @@
 \documentclass[a4paper,12pt]{article}
 
 %----------------------------------------------------------------------------------------
-%	FONT
-%----------------------------------------------------------------------------------------
-
-% % fontspec allows you to use TTF/OTF fonts directly
-% \usepackage{fontspec}
-% \defaultfontfeatures{Ligatures=TeX}
-
-% % modified for ShareLaTeX use
-% \setmainfont[
-% SmallCapsFont = Fontin-SmallCaps.otf,
-% BoldFont = Fontin-Bold.otf,
-% ItalicFont = Fontin-Italic.otf
-% ]
-% {Fontin.otf}
-
-%----------------------------------------------------------------------------------------
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
+% \usepackage[a4paper, margin=1in]{geometry} % Bị đẩy sang trang
+\usepackage[a4paper, margin=0.85in]{geometry} % SỬA LỖI: Chỉnh lề nhỏ lại một chút
 
 %tabularx environment
 \usepackage{tabularx}
@@ -62,8 +48,9 @@
 %for lists within experience section
 \usepackage{enumitem}
 
-% centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+% centered version of 'X' col.
+% type
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,7 +59,7 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
@@ -88,11 +75,11 @@
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
+% \addbibresource{citations.bib} % No publications in this CV
 \setlength\bibitemsep{1em}
 
 %for social icons
-\usepackage{fontawesome5}
+\usepackage{fontawesome5} % Using version 5
 
 %debug page outer frames
 %\usepackage{showframe}
@@ -118,7 +105,7 @@
     }
     {
     \end{itemize}
-    \end{minipage}    
+    \end{minipage}
     }
 
 
@@ -129,25 +116,18 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
-
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{DANG VAN NAM} \\[7.5pt]
+\href{tel:0824231401}{\raisebox{-0.05\height}\faMobile \ 082-423-1401} \ $|$ \ 
+\href{mailto:vannamdang2003@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ vannamdang2003@gmail.com} \ $|$ \ 
+\href{https://github.com/dvnam1401}{\raisebox{-0.05\height}\faGithub\ dvnam1401} \ $|$ \ 
+\raisebox{-0.05\height}\faMapMarker \ Ngu Hanh Son, Da Nang \\ % Use \faMapMarker to prevent errors
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -155,60 +135,61 @@
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-\section{Summary}
-This CV can also be automatically compiled and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+\section{Professional Objective}
+Final-year Software Engineering student at Duy Tan University, with a strong foundation in \textbf{Python, Java}, and web frameworks (\textbf{Django, Spring Boot}). Ready to apply knowledge of \textbf{Leader} roles and \textbf{Agile Scrum} processes in a professional environment. Eager to leverage both \textbf{Backend/Full-stack Development} capabilities to build products and specialized \textbf{Automation Testing (Java/Selenium)} skills to ensure comprehensive software quality.
 
 %Experience
-\section{Work Experience}
+\section{Project Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+% --- PROJECT 1 (UPDATED) ---
+\begin{joblong}{FAMILY SUGGESTION SYSTEM}{Feb 2025}
+\item \textbf{Role:} \textbf{Project Leader}. Responsible for \textbf{database design (MySQL)}, programming the entire \textbf{Backend API (Python/FastAPI)}, and \textbf{developing the Crawling Tool with Python/Selenium} to gather source data.
+\item \textbf{Core Functionality:} Programmed logic to suggest food suitable for user health based on their health history.
+\item \textbf{Performance Optimization:} Integrated \textbf{Redis Caching} to store temporary data, significantly reducing query processing time to the MySQL DB.
+\item \textbf{Process:} Operated and managed the project using the \textbf{Agile Scrum} model.
+\item \textbf{Technologies:} Python, FastAPI, React, Redis, MySQL.
 \end{joblong}
-  
-%Projects
-\section{Projects}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+% --- PROJECT 2 (UPDATED) ---
+\begin{joblong}{AI PRODUCT RECOMMENDATIONS FOR E-COMMERCE}{Sep 2024}
+\item \textbf{Role:} \textbf{Project Leader}. Responsible for \textbf{database design}, served as the main \textbf{Backend developer (Python/Django)}, and also \textbf{developed the Crawling Tool with Python/Selenium} to gather data for the website.
+\item \textbf{Core Functionality:} Built a personalized product recommendation platform based on user interaction data on the system.
+\item \textbf{Performance Optimization:} Applied \textbf{Redis Caching}, significantly reducing query processing time to the MySQL DB, improving user experience.
+\item \textbf{Process:} Built and deployed the project following the \textbf{Agile Scrum} model.
+\item \textbf{Technologies:} Python, Django, React, Redis, MySQL.
+\end{joblong}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+\section{Education \& Certification}
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+\textbf{EDUCATION}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2021 – 2025 & Bachelor of Software Engineering at \textbf{Duy Tan University} \\
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\vspace{5pt} % Small space
+\textbf{PROFESSIONAL TRAINING}
+
+\begin{joblong}{Software Testing Course (Manual \& Automation)}{CyberSoft Academy}
+\item Content: Completed specialized training in Test Case Design, API Testing, and \textbf{Automation Testing} (using \textbf{Java/Selenium WebDriver, TestNG}).
+\end{joblong}
+
+\begin{jobshort}{Cyber Security Certificate}{AGEST (Sep 2024)}
+\end{jobshort}
+
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
+\section{Professional Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Programming Languages & \normalsize{PYTHON, JAVA, C\#, C/C++}\\
+Web Frameworks & \normalsize{DJANGO, FASTAPI, SPRING BOOT, ASP.NET}\\
+Testing \& QA & \normalsize{\textbf{Automation:} Java, Selenium WebDriver, JUnit/TestNG. \textbf{Manual:} Test Case Design, Test Planning, API Testing (Postman).}\\
+Databases & \normalsize{MySQL, SQL Server, MongoDB, Redis}\\
+Tools \& Others & \normalsize{Git, \textbf{Agile Scrum (Project Management)}, \textbf{Selenium (Data Crawling)}, Visual Studio, PyCharm, VS Code, Postman.}\\ % Rasa removed
 \end{tabularx}
 
 \vfill
