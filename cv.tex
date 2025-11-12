@@ -88,8 +88,9 @@
 % job listing environments
 \newenvironment{jobshort}[2]
     {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    % --- SỬA LỖI BỐ CỤC (XÓA CỘT X Ở GIỮA) ---
+    \begin{tabularx}{\linewidth}{@{}X r@{}} 
+    \textbf{#1} & #2 \\[3.75pt]
     \end{tabularx}
     }
     {
@@ -97,8 +98,9 @@
 
 \newenvironment{joblong}[2]
     {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    % --- SỬA LỖI BỐ CỤC (XÓA CỘT X Ở GIỮA) ---
+    \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\[3.75pt]
     \end{tabularx}
     \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
@@ -136,13 +138,13 @@
 
 %Interests/ Keywords/ Summary
 \section{Professional Objective}
-Final-year Software Engineering student at Duy Tan University, with a strong foundation in \textbf{Python, Java, C#}, and web frameworks (\textbf{Django, FastAPI, ASP.NET, Spring Boot}). Ready to apply knowledge of \textbf{Leader} roles and \textbf{Agile Scrum} processes in a professional environment. Eager to leverage both \textbf{Backend/Full-stack Development} capabilities to build products and specialized \textbf{Automation Testing (Java/Selenium)} skills to ensure comprehensive software quality.
+Final-year Software Engineering student at Duy Tan University, with a strong foundation in \textbf{Python, Java, C\#}, and web frameworks (\textbf{Django, FastAPI, ASP.NET, Spring Boot}). Ready to apply knowledge of \textbf{Leader} roles and \textbf{Agile Scrum} processes in a professional environment. Eager to leverage both \textbf{Backend/Full-stack Development} capabilities to build products and specialized \textbf{Automation Testing (Java/Selenium)} skills to ensure comprehensive software quality.
 
 %Experience
 \section{Project Experience}
 
 % --- PROJECT 1 (UPDATED) ---
-\begin{joblong}{FAMILY SUGGESTION SYSTEM}{Feb 2025}
+\begin{joblong}{FAMILY SUGGESTION SYSTEM \normalfont\small{\href{https://github.com/orgs/Capstone-2-FMSuggestion-System/repositories}{(\faGithub\ Source Code)}}}{Feb 2025}
 \item \textbf{Role:} \textbf{Project Leader}. Responsible for \textbf{database design (MySQL)}, programming the entire \textbf{Backend API (Python/FastAPI)}, and \textbf{developing the Crawling Tool with Python/Selenium} to gather source data.
 \item \textbf{Core Functionality:} Programmed logic to suggest food suitable for user health based on their health history.
 \item \textbf{Performance Optimization:} Integrated \textbf{Redis Caching} to store temporary data, significantly reducing query processing time to the MySQL DB.
@@ -151,7 +153,7 @@ Final-year Software Engineering student at Duy Tan University, with a strong fou
 \end{joblong}
 
 % --- PROJECT 2 (UPDATED) ---
-\begin{joblong}{AI PRODUCT RECOMMENDATIONS FOR E-COMMERCE}{Sep 2024}
+\begin{joblong}{AI PRODUCT RECOMMENDATIONS FOR E-COMMERCE \normalfont\small{\href{https://github.com/orgs/Capstone-1-AI-Product-Recommendations/repositories}{(\faGithub\ Source Code)}}}{Sep 2024}
 \item \textbf{Role:} \textbf{Project Leader}. Responsible for \textbf{database design}, served as the main \textbf{Backend developer (Python/Django)}, and also \textbf{developed the Crawling Tool with Python/Selenium} to gather data for the website.
 \item \textbf{Core Functionality:} Built a personalized product recommendation platform based on user interaction data on the system.
 \item \textbf{Performance Optimization:} Applied \textbf{Redis Caching}, significantly reducing query processing time to the MySQL DB, improving user experience.
@@ -165,7 +167,7 @@ Final-year Software Engineering student at Duy Tan University, with a strong fou
 \section{Education \& Certification}
 
 \textbf{EDUCATION}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
 2021 – 2025 & Bachelor of Software Engineering at \textbf{Duy Tan University} \\
 \end{tabularx}
 
@@ -188,11 +190,11 @@ Final-year Software Engineering student at Duy Tan University, with a strong fou
 Programming Languages & \normalsize{PYTHON, JAVA, C\#, C/C++}\\
 Web Frameworks & \normalsize{DJANGO, FASTAPI, SPRING BOOT, ASP.NET}\\
 Testing \& QA & \normalsize{\textbf{Automation:} Java, Selenium WebDriver, JUnit/TestNG. \textbf{Manual:} Test Case Design, Test Planning, API Testing (Postman).}\\
-Databases & \normalsize{MySQL, SQL Server, MongoDB, Redis}\\
+Databases & \normalsize{MySQL, SQL Server, Redis}\\
 Tools \& Others & \normalsize{Git, \textbf{Agile Scrum (Project Management)}, \textbf{Selenium (Data Crawling)}, Visual Studio, PyCharm, VS Code, Postman.}\\ % Rasa removed
 \end{tabularx}
 
 \vfill
-\center{\footnotesize Last updated: \today}
+% \center{\footnotesize Last updated: \today}
 
 \end{document}
