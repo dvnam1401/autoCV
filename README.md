@@ -1,19 +1,15 @@
-# CV Cá nhân (Personal CV) - Đặng Văn Nam
+# Personal CV - Dang Van Nam
 
-[![Xem CV](https://img.shields.io/badge/Xem_CV-PDF-blue.svg)](https://dvnam1401.github.io/My_CV/)
+[![View CV](https://img.shields.io/badge/View_CV-PDF-blue.svg)](https://dvnam1401.github.io/My_CV/cv.pdf)
 
-## 📖 Giới thiệu (About this Project)
+## 📖 About this Project
 
-Đây là repository chứa mã nguồn LaTeX (file `cv.tex`) cho CV cá nhân của tôi.
+This repository contains the LaTeX source code (file `cv.tex`) for my personal CV.
 
-Dự án này sử dụng GitHub Actions (xem trong file `.github/workflows/build-cv.yml`) để tự động biên dịch file `.tex` thành `cv.pdf` và xuất bản phiên bản mới nhất lên GitHub Pages.
+This project uses GitHub Actions (see `.github/workflows/build-cv.yml`) to automatically compile the `.tex` file into `cv.pdf` and publish the latest version to GitHub Pages.
 
-Trang `index.html` được dùng để tự động chuyển hướng người dùng đến file PDF.
+The `index.html` file is used to automatically redirect users to the PDF.
 
-## 🖥 Biên dịch trên máy tính (Local Compilation)
+## 🖥 Local Compilation
 
-Nếu bạn đã cài đặt TeX Live và `latexmk`, bạn có thể biên dịch file CV này trên máy tính của mình bằng cách sử dụng `Makefile`:
-
-```bash
-# Biên dịch file cv.tex ra cv.pdf
-make all
+If you have TeX Live and `latexmk` installed, you can compile this CV locally using the `Makefile`:
