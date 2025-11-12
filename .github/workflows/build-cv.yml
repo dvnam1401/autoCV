@@ -10,34 +10,46 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Clean previous build artifacts
         run: |
-          rm -f cv.aux cv.bbl cv.bcf cv.blg cv.fdb_latexmk cv.fls cv.log cv.out cv.run.xml cv.toc cv.bcf-SAVE-ERROR cv.bbl-SAVE-ERROR
+          rm -f cv.aux cv.bbl cv.bcf cv.blg cv.fdb_latexmk cv.fls cv.log cv.out cv.run.xml cv.toc cv.bcf-SAVE-ERROR cv.bbl-SAVE-ERROR cv.pdf
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v4
         with:
           root_file: cv.tex
-          os: debian
+          compiler: latexmk
+          latexmk_use_lualatex: false
           latexmk_use_xelatex: true
           latexmk_shell_escape: false
           extra_system_packages: |
+            texlive-latex-base
             texlive-latex-extra
             texlive-fonts-recommended
             texlive-fonts-extra
             fonts-font-awesome
             biber
-          args: -pdf -file-line-error -interaction=nonstopmode
+            perl
+          args: -xelatex -pdf -file-line-error -interaction=nonstopmode -halt-on-error
+
+      - name: Check if PDF was generated
+        run: |
+          if [ ! -f cv.pdf ]; then
+            echo "Error: cv.pdf was not generated"
+            cat cv.log || echo "cv.log not found"
+            exit 1
+          fi
+          ls -lh cv.pdf
 
       - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: .
-          glob_patterns: |
-            cv.pdf
-            index.html
-          keep_files: false
+          cname: ""
+          force_orphan: false
+          files_to_remove: ""
