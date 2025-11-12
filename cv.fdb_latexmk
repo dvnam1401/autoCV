@@ -1,11 +1,11 @@
 # Fdb version 4
 ["biber cv"] 0 "cv.bcf" "cv.bbl" "cv" 0 -1
-  "cv.bcf" 1762947412.48053 107220 171ec2a914ddfcb6b3a8377c31bf7f6e "pdflatex"
+  "cv.bcf" 1762948845.21587 107220 171ec2a914ddfcb6b3a8377c31bf7f6e "pdflatex"
   (generated)
   "cv.bbl"
   "cv.blg"
   (rewritten before read)
-["pdflatex"] 1762947411.73325 "cv.tex" "cv.pdf" "cv" 1762947412.5929 2
+["pdflatex"] 1762948844.47366 "cv.tex" "cv.pdf" "cv" 1762948845.32833 2
   "/etc/texmf/web2c/texmf.cnf" 1762117559.16185 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -113,12 +113,12 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1700082560 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1762947353.43669 5312232 f3296911be9cc021788f3f879cf0a47d ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1762947382 6800791 26870b0576fdd39fbb0ff79cea750de0 ""
-  "cv.aux" 1762947412.47953 741 81ca5ea5bc36230341f0d0c388ee0e70 "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1762948785.61073 5312232 f3296911be9cc021788f3f879cf0a47d ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1762948810 6800791 d7c2004758a4df1036089bec6372ac8c ""
+  "cv.aux" 1762948845.21487 741 81ca5ea5bc36230341f0d0c388ee0e70 "pdflatex"
   "cv.bbl" 0 -1 0 "biber cv"
-  "cv.out" 1762947412.47953 610 4bbd313a0b2f59828c2840cdbe9cc640 "pdflatex"
-  "cv.tex" 1762947247.50495 8748 353cacc96af1e39a755e93a2bf99548d ""
+  "cv.out" 1762948845.21487 610 4bbd313a0b2f59828c2840cdbe9cc640 "pdflatex"
+  "cv.tex" 1762948654.30334 8749 efb5857bb4ac52f8716cca97132b3753 ""
   (generated)
   "cv.aux"
   "cv.bcf"
