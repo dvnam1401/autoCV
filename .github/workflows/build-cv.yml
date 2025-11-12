@@ -12,13 +12,17 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v3
 
+      - name: Clean previous build artifacts
+        run: |
+          rm -f cv.aux cv.bbl cv.bcf cv.blg cv.fdb_latexmk cv.fls cv.log cv.out cv.run.xml cv.toc cv.bcf-SAVE-ERROR cv.bbl-SAVE-ERROR
+
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v4
         with:
           root_file: cv.tex
           latexmk_use_xelatex: false
           latexmk_shell_escape: false
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+          args: -pdf -file-line-error -interaction=nonstopmode
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

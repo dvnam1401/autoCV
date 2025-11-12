@@ -1,0 +1,3 @@
+$pdflatex = 'pdflatex -interaction=nonstopmode -file-line-error %O %S';
+$bibtex_use = 0;
+
