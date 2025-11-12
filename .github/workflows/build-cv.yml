@@ -1,4 +1,5 @@
 name: Build LaTeX CV
+
 # Chạy workflow này mỗi khi bạn push lên branch 'main'
 on:
   push:
@@ -13,18 +14,22 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v3
 
-      # Bước 2: Cài đặt TeX Live (trình biên dịch LaTeX)
+      # --------------------------------------------------------------------
+      # BƯỚC BỊ THIẾU CỦA BẠN NẰM Ở ĐÂY
+      # Bước 2: Cài đặt TeX Live (với latexmk và fontawesome5)
+      # --------------------------------------------------------------------
       - name: Set up TeX Live
         uses: xu-cheng/texlive-action@v2
         with:
           # Cài các gói cần thiết:
-          # - latexmk: Tự động biên dịch
-          # - fontawesome5: Rất quan trọng để render các icon (faMobile, faGithub...)
+          # - latexmk: Trình biên dịch chính
+          # - fontawesome5: Để hiển thị các icon (Github, Mobile...)
           packages: latexmk fontawesome5
 
       # Bước 3: Biên dịch file .tex ra .pdf
+      # (Bước này sẽ hết lỗi 'command not found' sau khi có Bước 2)
       - name: Compile CV
-        run: latexmk -pdf cv.tex # Tên file .tex của bạn là cv.tex
+        run: latexmk -pdf cv.tex
 
       # Bước 4: Deploy file PDF và index.html lên branch 'gh-pages'
       - name: Deploy to GitHub Pages
