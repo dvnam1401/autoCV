@@ -22,7 +22,7 @@ jobs:
           root_file: cv.tex
           latexmk_use_xelatex: false
           latexmk_shell_escape: false
-          args: -pdf -file-line-error -interaction=nonstopmode
+          args: -pdf -bibtex- -file-line-error -interaction=nonstopmode
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
