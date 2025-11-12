@@ -1,11 +1,11 @@
 # Fdb version 4
 ["biber cv"] 0 "cv.bcf" "cv.bbl" "cv" 0 -1
-  "cv.bcf" 1762948845.21587 107220 171ec2a914ddfcb6b3a8377c31bf7f6e "pdflatex"
+  "cv.bcf" 1762949262.03847 107220 171ec2a914ddfcb6b3a8377c31bf7f6e "pdflatex"
   (generated)
   "cv.bbl"
   "cv.blg"
   (rewritten before read)
-["pdflatex"] 1762948844.47366 "cv.tex" "cv.pdf" "cv" 1762948845.32833 2
+["pdflatex"] 1762949261.31014 "cv.tex" "cv.pdf" "cv" 1762949262.14844 2
   "/etc/texmf/web2c/texmf.cnf" 1762117559.16185 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -28,7 +28,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/fontawesome5/fa5free2solid.tfm" 1622837620 1340 b21002f38a477f345fa9dc96a5613e2b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -113,12 +112,12 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1700082560 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1762948785.61073 5312232 f3296911be9cc021788f3f879cf0a47d ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1762948810 6800791 d7c2004758a4df1036089bec6372ac8c ""
-  "cv.aux" 1762948845.21487 741 81ca5ea5bc36230341f0d0c388ee0e70 "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1762949202.33993 5312232 f3296911be9cc021788f3f879cf0a47d ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1762949237 6800791 79b9d727e97129abaa4e821fcefd3029 ""
+  "cv.aux" 1762949262.03647 741 81ca5ea5bc36230341f0d0c388ee0e70 "pdflatex"
   "cv.bbl" 0 -1 0 "biber cv"
-  "cv.out" 1762948845.21487 610 4bbd313a0b2f59828c2840cdbe9cc640 "pdflatex"
-  "cv.tex" 1762948654.30334 8749 efb5857bb4ac52f8716cca97132b3753 ""
+  "cv.out" 1762949262.03747 610 4bbd313a0b2f59828c2840cdbe9cc640 "pdflatex"
+  "cv.tex" 1762949047.33818 8752 998d7cfdd8bd15201fff123a563c15d4 ""
   (generated)
   "cv.aux"
   "cv.bcf"
