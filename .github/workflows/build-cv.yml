@@ -20,9 +20,15 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           root_file: cv.tex
-          latexmk_use_xelatex: false
+          os: ubuntu
+          latexmk_use_xelatex: true
           latexmk_shell_escape: false
-          args: -pdf -bibtex- -file-line-error -interaction=nonstopmode
+          extra_system_packages: |
+            texlive-latex-extra
+            texlive-fonts-recommended
+            texlive-fonts-extra
+            fonts-font-awesome
+          args: -pdf -file-line-error -interaction=nonstopmode
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
